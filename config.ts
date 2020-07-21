@@ -1,14 +1,14 @@
 const siteMetadata = {
-    title: `Elemental`,
-    siteUrl: `http://localhost`,
-    capitalizeTitleOnHome: false,
+    title: `Built to Code`,
+    siteUrl: `http://builttocode.dev`,
+    capitalizeTitleOnHome: true,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
     titleImage: `/images/wall.png`,
     ogImage: `/images/wall.png`,
     twoColumnWall: true,
-    cookiePolicy: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
+    cookiePolicy: false,
+    introTag: `WEB DEVELOPMENT | CUSTOM CARPENTRY | IT CONSULTATION`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
     about:
         "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
@@ -46,15 +46,10 @@ const siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
+            url: "https://github.com/vincegrilli",
         },
     ],
     social: [
-        {
-            name: "Facebook",
-            icon: "/images/Facebook.svg",
-            url: "#",
-        },
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
@@ -75,11 +70,10 @@ const siteMetadata = {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        mail: "Vince@builttocode.dev",
+        phone: "774-212-2849",
+        address: "Brewster \nCape Cod MA",
     },
-    disqus: "elemental-netlify-com",
 }
 
 const beforeContactFormSubmit = data => {
@@ -156,7 +150,7 @@ const defaults = {
     darkmode: false,
     switchTheme: true,
     capitalizeTitleOnHome: true,
-    cookiePolicy: false
+    cookiePolicy: false,
 }
 
 Object.keys(defaults).forEach(item => {
