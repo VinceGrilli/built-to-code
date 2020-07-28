@@ -145,7 +145,6 @@ const contactFormSubmit = async (api, data) => {
 }
 
 const defaults = {
-    disqus: null,
     twoColumnWall: true,
     darkmode: false,
     switchTheme: true,
