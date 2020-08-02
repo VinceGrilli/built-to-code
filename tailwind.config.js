@@ -1,5 +1,5 @@
 const plugin = require("tailwindcss/plugin")
-const _ = require("lodash");
+const _ = require("lodash")
 
 const gradient = plugin(function({ addUtilities, e, theme, variants }) {
     const gradients = theme("gradients", {})
@@ -14,9 +14,13 @@ const gradient = plugin(function({ addUtilities, e, theme, variants }) {
     addUtilities(utilities, gradientVariants)
 })
 
-
 module.exports = {
-    purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
+    purge: [
+        "./src/**/*.js",
+        "./src/**/*.jsx",
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+    ],
     theme: {
         gradients: theme => ({
             primary: [theme("colors.primary"), theme("colors.secondary")],
@@ -26,42 +30,40 @@ module.exports = {
                 bg: "#111",
                 bgalt: "#000",
                 "color-default": "#eee",
-                "color-1": "#c35fde",
-                "color-2": "#adbfef",
+                "color-1": "#87c232",
+                "color-2": "#8a9986",
                 border: "#718096",
-                primary: "#f55555",
-                medium: "#222"
+                primary: "#687864",
+                medium: "#222",
             },
         },
         colors: {
-            bg: "#fff",
-            bgalt: "#f5f5f5",
+            bg: "#E5E5E5",
+            bgalt: "#E5E5E5",
             "color-default": "#333",
-            "color-1": "#8e24aa",
-            "color-2": "#673ab7",
-            "color-3": "#aeb4c5",
-            primary: "#f55555",
-            secondary: "#6888df",
+            "color-1": "#777369",
+            "color-2": "#0A2647",
+            "color-3": "#687864",
+            primary: "#0A2647",
+            secondary: "#BFCDE0",
             link: "#0a71c5",
             medium: "#cfd8dc",
-            white: "#fff",
+            white: "#E5E5E5",
             black: "#000",
             transparent: "rgba(0,0,0,0)",
             error: "#ef5350",
-            success: "#8bc34a"
+            success: "#87c232",
         },
         extend: {
             fontSize: {
-                '7xl': '5rem'
+                "7xl": "5rem",
             },
             spacing: {
-                '1px': '1px',
-                '2px': '2px'
-            }
+                "1px": "1px",
+                "2px": "2px",
+            },
         },
     },
     variants: {},
     plugins: [require(`tailwind-theme-switcher`), gradient],
 }
-
-
