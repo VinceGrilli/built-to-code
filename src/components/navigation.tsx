@@ -114,7 +114,7 @@ const Navbar: React.FC<NavbarProps> = ({
                 <Link to="/" title={data.site.siteMetadata.title}>
                     <Logo
                         className={`duration-300 transition-all ${
-                            scrolled ? "w-32 h-9" : "w-24"
+                            scrolled ? "w-40" : "w-32"
                         }`}
                     />
                 </Link>

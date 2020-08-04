@@ -82,7 +82,7 @@ const Wall = ({ data }) => {
         <React.Fragment>
             <div className="title bg-bg">
                 <h1
-                    className={`text-6xl relative lg:text-7xl ${
+                    className={`text-5xl relative lg:text-7xl ${
                         data.capitalizeTitleOnHome ? "uppercase" : ""
                     }`}
                 >
@@ -110,7 +110,7 @@ const Wall = ({ data }) => {
                 className="wall h-screen flex relative justify-center items-center overflow-hidden"
                 ref={wall}
             >
-                <div className="flex-1 lg:block absolute lg:relative w-full h-full top-0 left-0">
+                <div className="flex-1 absolute lg:relative w-full h-full lg:h-auto left-0">
                     <div
                         className="absolute left-0 top-0 w-full h-full lg:hidden"
                         style={{
@@ -120,7 +120,7 @@ const Wall = ({ data }) => {
                     <img
                         src={data.titleImage}
                         alt=""
-                        className="h-full w-auto max-w-none lg:h-auto lg:w-full"
+                        className="w-auto object-cover h-full lg: lg:left-0 lg:w-full lg:ml-5"
                     />
                 </div>
                 <div className="flex-1 text-center p-3 relative z-10 lg:text-left lg:pl-8 text-white lg:text-color-default">
