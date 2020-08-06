@@ -3,13 +3,15 @@ import { MDXProvider } from "@mdx-js/react"
 import { graphql, PageProps } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import { Calendar } from "react-feather"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import { Row, Col } from "../components/shortcodes/index"
 import { PortfolioQuery } from "./__generated__/PortfolioQuery"
 
-export default function porfolio ({ location, data }: PageProps<PortfolioQuery, {}>) {
+export default function porfolio({
+    location,
+    data,
+}: PageProps<PortfolioQuery, {}>) {
     return (
         <Layout
             seo={{
@@ -32,12 +34,6 @@ export default function porfolio ({ location, data }: PageProps<PortfolioQuery, 
                             <h1 className="text-5xl font-bold text-color-1 lg:text-white">
                                 {data.mdx.frontmatter.title}
                             </h1>
-                            <p className="mt-1 flex items-center justify-center">
-                                <Calendar />{" "}
-                                <span className="ml-2">
-                                    {data.mdx.frontmatter.date}
-                                </span>
-                            </p>
                             <p className="mt-3 md:w-3/4 mx-auto">
                                 {data.mdx.frontmatter.description}
                             </p>
@@ -60,7 +56,6 @@ export const query = graphql`
             body
             frontmatter {
                 title
-                date(formatString: "DD MMMM YYYY")
                 description
                 banner {
                     publicURL
