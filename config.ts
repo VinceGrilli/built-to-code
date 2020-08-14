@@ -8,11 +8,13 @@ const siteMetadata = {
     ogImage: `/images/desk3.jpg`,
     twoColumnWall: true,
     cookiePolicy: false,
-    introTag: `WEB DEVELOPMENT | CUSTOM CARPENTRY | IT CONSULTAION`,
+    introTag: `WEB DEVELOPMENT | CUSTOM CARPENTRY`,
     description: `Specializing in modern blazing-fast Websites & Apps + Custom Finish Carpentry & Home Renovation`,
-    about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
-    author: `@_akzhy`,
+    about: `Welcome to Built to Code. We are a unique Cape Cod business combining custom carpentry and web development.
+    Creator and owner, Vince Grilli, has worked in the construction industry for 10 years building custom homes in one of the world’s most desirable beach side communities, Cape Cod. When he wasn’t working on the jobsite, he was perusing his lifelong passion for all things tech. Vince has spent years learning front and back end web development and modern, responsive design.
+    Vince brings his attention to detail and eye for design to each individual project with the care and attention as if it were his own home, or home page.
+    `,
+    author: `@VinceGrilli`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
