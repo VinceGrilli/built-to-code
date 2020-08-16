@@ -34,7 +34,7 @@ export default function porfolio({
                             <h1 className="text-5xl font-bold text-color-1 lg:text-white">
                                 {data.mdx.frontmatter.title}
                             </h1>
-                            <p className="mt-3 md:w-3/4 mx-auto">
+                            <p className="mt-3 md:w-3/4  mx-auto">
                                 {data.mdx.frontmatter.description}
                             </p>
                         </div>
