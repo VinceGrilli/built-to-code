@@ -71,7 +71,7 @@ const siteMetadata = {
     contact: {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+        description: `Contact us today with a brief description of your ideas!`,
         mail: "Vince@builttocode.dev",
         phone: "774-212-2849",
         address: "Brewster \nCape Cod MA",
