@@ -51,8 +51,8 @@ module.exports = {
             white: "#eee",
             black: "#000",
             transparent: "rgba(0,0,0,0)",
-            error: "#ef5350",
-            success: "#87c232",
+            error: "#0b4c8a",
+            success: "#BBAC96",
         },
         extend: {
             fontSize: {
