@@ -5,6 +5,8 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { BasePagesQuery } from "./__generated__/BasePagesQuery"
 
+import logo from "../../static/images/logo.png"
+
 export default function basePages({
     data,
     location,
@@ -19,7 +21,8 @@ export default function basePages({
             location={location}
         >
             <div className="boxed">
-                <div className="title py-12 text-center">
+                <img src={logo} alt="Built to Code" className=" " />
+                <div className="title mt-0 text-center">
                     <h2 className="font-black text-5xl text-color-1">
                         {data.mdx.frontmatter.title}
                     </h2>

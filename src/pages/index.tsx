@@ -120,7 +120,7 @@ const Wall = ({ data }) => {
                     <img
                         src={data.titleImage}
                         alt=""
-                        className="w-auto object-cover h-full lg: lg:left-0 lg:w-full lg:ml-5"
+                        className="w-auto object-cover h-full lg:left-0 lg:w-full lg:ml-5"
                     />
                 </div>
                 <div className="flex-1 text-center p-3 relative z-10 lg:text-left lg:pl-8 text-white lg:text-color-default">
