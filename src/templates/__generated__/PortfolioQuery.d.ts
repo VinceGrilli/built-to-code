@@ -9,7 +9,7 @@
 
 export interface PortfolioQuery_mdx_frontmatter_banner_childImageSharp_fluid {
   srcSet: string;
-  base64: string | null;
+  tracedSVG: string | null;
   aspectRatio: number;
   src: string;
   sizes: string;
