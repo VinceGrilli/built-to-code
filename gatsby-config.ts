@@ -4,6 +4,14 @@ import autoprefixer from "autoprefixer"
 import tailwindcss from "tailwindcss"
 
 const plugins = [
+    {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+            trackingId: "UA-178077323-1",
+            head: true,
+            anonymize: true,
+        },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
